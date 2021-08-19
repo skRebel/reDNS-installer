@@ -21,13 +21,17 @@ import java.util.logging.Logger;
 public class ProcessRuntime {
     
 
-    public static Map<String, String> paths = new HashMap<>();
+    public static Map<String, String> paths = new HashMap<>(); // List of nodeJS runtimes
     public static void initializer() {
-        paths.put("AdobeCCX", "c:\\program files\\adobe\\creative cloud experience\\libs\\node.exe");
-    }
+        paths.put("AdobeCCX", "C:\\Program Files\\Adobe\\Adobe Creative Cloud Experience\\libs\\node.exe"); // Register AdobeCCX
+    }   
     public static void callNode(String... path) {
-        try {
-            runCommandLine("./zip-Xtract/","c:\\program files\\adobe\\creative cloud experience\\libs\\node.exe", ".");
+        if (path.length > 1) try {
+            runCommandLine("./zip-Xtract/", path[1], ".");
+        } catch (IOException ex) {
+            Logger.getLogger(ProcessRuntime.class.getName()).log(Level.SEVERE, null, ex);
+        } else try {
+            runCommandLine("./zip-Xtract/","C:\\Program Files\\Adobe\\Adobe Creative Cloud Experience\\libs\\node.exe", ".");
         } catch (IOException ex) {
             Logger.getLogger(ProcessRuntime.class.getName()).log(Level.SEVERE, null, ex);
         }
