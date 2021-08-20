@@ -39,7 +39,7 @@ public class ProcessRuntime {
     public static void callBrowser() {
         try {
             // Runtime.getRuntime().exec("taskkill /F /IM chrome.exe"); //Windows only
-            runCommandLine(".","C:\\Program Files\\Google\\Application\\chrome.exe", "--proxy-server=127.0.0.1:8124");
+            runCommandLine(".","C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "--proxy-server=127.0.0.1:8124");
         } catch (IOException ex) {
             Logger.getLogger(ProcessRuntime.class.getName()).log(Level.SEVERE, null, ex);
         }
