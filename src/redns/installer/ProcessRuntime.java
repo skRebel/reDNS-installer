@@ -26,11 +26,13 @@ public class ProcessRuntime {
         paths.put("AdobeCCX", "C:\\Program Files\\Adobe\\Adobe Creative Cloud Experience\\libs\\node.exe"); // Register AdobeCCX
     }   
     public static void callNode(String... path) {
-        if (path.length > 1) try {
+        if (path[0].equals("custom")) try {
+            System.out.println("Execute Custom");
             runCommandLine("./zip-Xtract/", path[1], ".");
         } catch (IOException ex) {
             Logger.getLogger(ProcessRuntime.class.getName()).log(Level.SEVERE, null, ex);
         } else try {
+            System.out.println("Execute CCX");
             runCommandLine("./zip-Xtract/","C:\\Program Files\\Adobe\\Adobe Creative Cloud Experience\\libs\\node.exe", ".");
         } catch (IOException ex) {
             Logger.getLogger(ProcessRuntime.class.getName()).log(Level.SEVERE, null, ex);
