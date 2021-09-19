@@ -15,8 +15,8 @@ The only goal of this project is to install and execute https://github.com/skReb
 2. Then click Launch Google Chrome
 
 
-### Building
-You have two options
+### Building/Compiling (Optional)
+**ADVANCED USERS ONLY**: You have two options
 * import with netbeans and compile 
 * compile with ant simply by typing `ant`
 
