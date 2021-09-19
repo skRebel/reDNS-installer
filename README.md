@@ -5,7 +5,7 @@ the installer for reDNS
 The only goal of this project is to install and execute https://github.com/skRebel/reDNS with various runtimes
 
 ### Installation
-1. Download latest release from https://github.com/skRebel/reDNS-installer/releases/
+1. Download latest release (dist.zip) from https://github.com/skRebel/reDNS-installer/releases/
 2. Extract zip file (Windows: Compressed folder tools > Extract All > Extract)
 3. Execute Jar file from extracted folder
 4. Click Install
