@@ -22,3 +22,12 @@ The only goal of this project is to install and execute https://github.com/skReb
 
 ### Feedback
 Please send any feedback to https://github.com/skRebel/skDiscussions/discussions
+
+### Join the skRebel hype club!
+
+Joining the skRebel hype club will get you 
+* Earlier builds of skRebel
+* Better support
+* Help with running the software
+
+All you need to do to join is spread the word and join the [Discord](https://discord.gg/fq4MFtxKY9)!
